@@ -162,9 +162,4 @@ app = ApplicationBuilder().token("8920369792:AAHpZuBMLSFuOYvXP8AxGc1i8jFrvCBz9vA
 app.add_handler(CommandHandler("btc", btc))
 
 print("Bot is running...")
-app.run_polling(
-    connect_timeout=30,
-    read_timeout=30,
-    write_timeout=30,
-    pool_timeout=30
-)
+app.run_polling()
